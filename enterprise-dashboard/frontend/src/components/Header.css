@@ -1,0 +1,50 @@
+.header {
+    background-color: #2c3e50;
+    padding: 1rem;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 64px;
+    display: flex;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px 0 270px; /* Add padding left to account for sidebar */
+    position: relative; /* For absolute positioning of children */
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.logout-button {
+    background-color: #dc3545; /* Red color */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    position: absolute; /* Position absolutely */
+    right: 20px; /* Distance from right edge */
+    width: auto; /* Override any width inheritance */
+}
+
+.logout-button:hover {
+    background-color: #c82333; /* Darker red on hover */
+} 

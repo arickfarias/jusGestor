@@ -1,0 +1,198 @@
+.company-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 2px solid transparent;
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+}
+
+.company-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.company-card.selected {
+    border-color: #3498db;
+    background-color: #f7fbfe;
+}
+
+.company-delete-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #e74c3c;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    opacity: 0.7;
+    z-index: 10;
+}
+
+.company-delete-button:hover {
+    background-color: #e74c3c;
+    color: white;
+    opacity: 1;
+}
+
+.company-info {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.company-info h3 {
+    color: #2c3e50;
+    margin: 0 0 15px 0;
+    font-size: 1.3rem;
+}
+
+.company-info p {
+    margin: 10px 0;
+    color: #34495e;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+}
+
+.company-info p:last-child {
+    margin-bottom: 0;
+    margin-right: 30px;
+}
+
+.toggle-button {
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    background: #3498db;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    width: 30px;
+    height: 30px;
+}
+
+.toggle-button:hover {
+    background-color: #2980b9;
+}
+
+.expandable-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.company-card.expanded .expandable-content {
+    max-height: 2000px;
+    transition: max-height 0.5s ease-in;
+}
+
+.edit-form {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-group input:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.1);
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.card-actions {
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid #e9ecef;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.edit-button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    width: 70%;
+}
+
+.edit-button:hover {
+    background-color: #2980b9;
+}
+
+.save-button {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.save-button:hover {
+    background-color: #27ae60;
+}
+
+.cancel-button {
+    background-color: #95a5a6;
+    color: white;
+}
+
+.cancel-button:hover {
+    background-color: #7f8c8d;
+}
+
+/* QSA and Tax Profile sections */
+.company-card.selected .qsa-manager,
+.company-card.selected .tax-profile-editor {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #e9ecef;
+}
