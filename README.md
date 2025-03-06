@@ -1,4 +1,4 @@
-# Painel Empresarial
+# jusGestor
 
 Painel Empresarial é uma aplicação web desenvolvida para gerenciar e visualizar dados empresariais de maneira eficiente. O projeto é composto por um frontend em React e um backend em Node.js, proporcionando uma interface intuitiva e funcionalidades robustas para a administração de informações empresariais.
 
@@ -31,11 +31,11 @@ Painel Empresarial é uma aplicação web desenvolvida para gerenciar e visualiz
 
 1. Clone o repositório:
    ```sh
-   git clone https://github.com/arickfarias/Painel-Empresarial.git
+   git clone https://github.com/arickfarias/jusGestor.git
    ```
 2. Instale as dependências do backend e frontend:
    ```sh
-   cd Painel-Empresarial/backend
+   cd jusGestor/backend
    npm install
    cd ../frontend
    npm install
