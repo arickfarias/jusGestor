@@ -18,7 +18,7 @@ Painel Empresarial é uma aplicação web desenvolvida para gerenciar e visualiz
 - **frontend/**: Contém o código do frontend desenvolvido em React.
   - `src/index.js`: Ponto de entrada da aplicação React.
 - **backend/**: Contém o código do backend desenvolvido em Node.js.
-  - `src/index.js`: Ponto de entrada da aplicação Node.js.
+  - `server.js`: Ponto de entrada da aplicação Node.js.
 
 ## Como Executar
 
@@ -46,7 +46,7 @@ Painel Empresarial é uma aplicação web desenvolvida para gerenciar e visualiz
 1. Inicie o backend:
    ```sh
    cd backend
-   npm start
+   node server.js
    ```
 2. Inicie o frontend:
    ```sh
